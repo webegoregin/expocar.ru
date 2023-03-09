@@ -1,0 +1,1564 @@
+.block-img__absolute .banner,
+.container-header,
+.block-img__absolute {
+    max-height: 550px;
+    min-height: 550px;
+}
+
+.text-banner__title {
+    margin-bottom: 0;
+}
+
+.text-banner {
+    bottom: 215px;
+}
+
+.container-about {
+    padding: 150px 100px;
+}
+
+.container-importance {
+    padding: 100px 100px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 40px;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.office-block__center {
+    display: flex;
+}
+
+.office-block__center-flex {
+    display: flex;
+    flex-direction: column;
+    min-width: 203px;
+}
+
+.office-block__center-flex.mr {
+    margin-right: 280px;
+}
+
+.office-block__center.mt {
+    margin-top: 40px;
+}
+
+
+.text {
+    margin: 0;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.office-block__center-flex a {
+    margin-top: 10px;
+}
+
+.social__office .social__item {
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+.select-container {
+    display: flex;
+
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.select-box {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    position: relative;
+    margin-right: 25px;
+}
+
+.select-container__box {
+    position: relative;
+}
+
+.select-box .options-container-dealer {
+    background: white;
+    color: #BFBFBF;
+    opacity: 0;
+    overflow: hidden;
+    order: 1;
+    transition: 0s;
+    border: 1px solid black;
+    width: 250px;
+    position: absolute;
+    display: none;
+    top: 60px;
+}
+
+.selected-dealer {
+    background: white;
+    position: relative;
+    order: 0;
+    font-size: 18px;
+    line-height: 27px;
+    color: #282828;
+    border: 1px solid #282828;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 11px 15px 10px 15px;
+
+}
+
+.selected-dealer::after {
+    content: url("data:image/svg+xml;charset=UTF-8, %3csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.2725 0L12 0.754687L6 7L0 0.754687L0.723749 0L6 5.48698L11.2725 0Z' fill='black'/%3e%3c/svg%3e");
+    top: 10px;
+    right: 15px;
+    position: absolute;
+    transition: 1s;
+}
+
+.select-box .options-container-dealer.active {
+    max-height: 200px;
+    opacity: 1;
+    overflow-y: auto;
+    border: 1px solid black;
+    width: 250px;
+    position: absolute;
+    display: block;
+    top: 60px;
+    text-transform: none;
+    box-sizing: border-box;
+    transition: 0.25s;
+}
+
+
+.select-box .options-container-dealer.active+.selected-dealer::after {
+    content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.2725 7L12 6.24531L6 2.38419e-07L-4.76837e-07 6.24531L0.723749 7L6 1.51302L11.2725 7Z' fill='black'/%3e%3c/svg%3e ");
+    transition: 1s;
+}
+
+.selected-dealer {
+    width: 250px;
+    cursor: pointer;
+}
+
+.select-box label {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.select-box label:hover {
+    color: black;
+}
+
+.select-box label {
+    cursor: pointer;
+    display: block;
+}
+
+.select-box .radio {
+    display: none;
+}
+
+.js-show {
+    display: none;
+}
+
+
+.checkbox-cars {
+    display: flex;
+    width: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #282828;
+    text-align: left;
+    box-sizing: border-box;
+    margin-right: 25px;
+}
+
+.checkbox-container {
+    display: flex;
+}
+
+
+.input-checkbox {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+.checkbox-cars label {
+    cursor: pointer;
+}
+
+
+.input-checkboxx+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.input-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #909090;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    box-sizing: border-box;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.input-checkbox:checked+label::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M14 0.702843L4.7828 10L0 5.17571L0.696799 4.47287L4.7828 8.59431L13.3032 0L14 0.702843Z' fill='black'/%3e%3c/svg%3e ");
+}
+
+.container-dealer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 0;
+}
+
+.container-new-dealer {
+    margin-top: 40px;
+}
+
+.container-asp-dealer {
+    margin-top: 40px;
+}
+
+.dealer__title {
+    font-family: 'CirceLight';
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 100%;
+    color: #282828;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.list-dealers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 40px;
+    justify-content: space-between;
+}
+
+.list-dealers__item {
+    font-size: 18px;
+    line-height: 130%;
+    color: #282828;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-dealers__item p {
+    margin: 0;
+}
+
+.list-dealers__item-work {
+    font-weight: 400;
+    color: #BFBFBF;
+}
+
+.list-dealers__item-tel {
+    color: #282828;
+}
+
+.container-info-company {
+    padding: 150px 100px 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 120px;
+}
+
+.item-text {
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.item-text,
+.item-city {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #282828;
+}
+
+.item-number {
+    font-weight: 350;
+    font-size: 64px;
+    line-height: 110%;
+    margin-bottom: 5px;
+    color: #282828;
+    font-family: 'CirceLight';
+}
+
+
+.container-absolute {
+    position: absolute;
+    top: 0px;
+    width: auto;
+}
+
+.container-absolute__text {
+    font-size: 36px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.container-absolute__block-top {
+    top: 248px;
+    left: 505px;
+    position: relative;
+    width: 840px;
+}
+
+.container-absolute__block-bottom {
+    left: 0;
+    top: 330px;
+    position: relative;
+    width: 1094px;
+}
+
+.section-absolute {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    top: 0;
+    min-height: 900px;
+    overflow: hidden;
+    max-height: 900px;
+
+}
+
+
+
+.importance-grid__item {
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+    padding: 25px 15px 30px 30px;
+    box-sizing: border-box;
+}
+
+.importance-grid__item-number {
+    font-weight: 350;
+    font-size: 64px;
+    line-height: 110%;
+    color: #BFBFBF;
+    margin-bottom: 15px;
+    font-family: 'CirceLight';
+    display: flex;
+}
+
+.importance-grid__item-number>div {
+    font-family: 'CirceLight';
+}
+
+.importance-grid__item-name {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #282828;
+    margin-bottom: 10px;
+}
+
+.importance-grid__item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #282828;
+}
+
+
+.container-vacancy__info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px 20px;
+}
+
+.vacancy__list-item-city,
+.vacancy_title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #282828;
+
+}
+
+.vacancy_title {
+    margin-bottom: 30px;
+}
+
+.section-vacancy {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+
+.vacancy__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.section-vacancy>.vacancy__list {
+    grid-column: 2;
+}
+
+.vacancy__list-item-city {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    position: relative;
+    display: block;
+}
+
+@-webkit-keyframes animationLine {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes animationLine {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+.animationLine::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #BFBFBF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-animation-name: animationLine;
+    animation-name: animationLine;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 0.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.vacancy__list-item-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #282828;
+    padding-bottom: 10px;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.vacancy__list-item-name:last-child {
+    margin-bottom: 0;
+}
+
+.vacancy__list-item-name::after {
+    content: url('../img/vacancy-arrow.svg');
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+}
+
+.vacancy__list-item-name:hover::after {
+    right: 10px;
+    transition: 0.5s;
+}
+
+.text-banner__title-partner {
+    margin-bottom: 15px;
+}
+
+.text-banner__partner {
+    bottom: 120px;
+}
+
+.container-partner {
+    padding-top: 150px;
+}
+
+.container-partner__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 150px;
+    margin-top: 80px;
+    padding-right: 290px;
+}
+
+.container-partner__item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color: #282828;
+    padding-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container-partner__item br {
+    display: none;
+}
+
+.container-partner__item:nth-last-child(-n+2) {
+    padding-bottom: 0;
+    border: none;
+}
+
+.container-partner__item::after {
+    content: url("data:image/svg+xml;charset=UTF-8, %3csvg width='30' height='31' viewBox='0 0 30 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='28.9819' width='1.01695' height='26.4478' fill='%23282828'/%3e%3crect x='3.55933' width='26.4407' height='1.01695' fill='%23282828'/%3e%3crect width='40.6834' height='1.01709' transform='matrix(0.707012 -0.707202 0.707181 0.707033 0 29.2832)' fill='%23282828'/%3e%3c/svg%3e ");
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.container-news {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 80px;
+}
+
+.news__item {
+    grid-template-columns: 440px auto;
+    gap: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.news__item:nth-child(-n+3) {
+    display: flex;
+}
+
+.news__item picture {
+    width: 100%;
+    max-width: 440px;
+}
+
+.news__item picture img {
+    max-height: 245px;
+    object-fit: cover;
+    width: 100%;
+    max-width: 440px;
+    min-width: 440px;
+}
+
+.news__item-info-date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+
+    /* серый */
+
+    color: #BFBFBF;
+    margin-bottom: 20px;
+}
+
+.news__item-info-title {
+
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+
+    /* Черный */
+
+    color: #282828;
+    padding-right: 0px;
+}
+
+.news__item-info-text {
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+
+    /* Черный */
+    position: relative;
+    color: #282828;
+    margin-bottom: 27px;
+    padding-right: 140px;
+}
+
+.news__item-info-title {
+    margin-bottom: 20px;
+}
+
+.social__news {
+    display: flex;
+}
+
+.social__news .social__item {
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+.detail-news {
+    padding: 0 300px;
+    box-sizing: border-box;
+}
+
+.detail-news__title {
+    max-width: 620px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    /* or 36px */
+
+
+    /* Черный */
+
+    color: #282828;
+    margin-bottom: 40px;
+}
+
+.detail-news__date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+
+    /* серый */
+
+    color: #BFBFBF;
+    margin-bottom: 40px;
+}
+
+.detail-news__info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* or 23px */
+
+
+    /* Черный */
+
+    color: #282828;
+}
+
+.detail-news__info p {
+    margin: 0;
+    padding: 0;
+}
+
+.detail-news__info h4,
+.detail-news__info h3,
+.detail-news__info h2,
+.detail-news__info h1,
+.detail-news__info h5 {
+    margin-top: 80px;
+    font-size: 18px;
+}
+
+
+
+.detail-news__info p>img {
+    margin: 30px 0;
+    box-sizing: border-box;
+
+    border: none;
+}
+
+.social-detail-news {
+    margin: 40px 0;
+    padding: 30px 0;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    box-sizing: border-box;
+}
+
+.detail-news-controls {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.detail-news-controls a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+
+    /* Черный */
+
+    color: #282828;
+    margin: 0 auto;
+}
+
+.prev-news {
+    position: absolute;
+    left: 0;
+    display: flex;
+}
+
+.prev-news a::before {
+    content: url("data:image/svg+xml;charset=UTF-8, %3csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0.7275L0.754687 0L7 6L0.754687 12L0 11.2763L5.48698 6L0 0.7275Z' fill='%23282828'/%3e%3c/svg%3e ");
+    margin-right: 10px;
+    position: relative;
+    transform: rotateY(180deg);
+    display: inline-block;
+}
+
+.next-news {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.next-news a::after {
+    content: url("data:image/svg+xml;charset=UTF-8, %3csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0.7275L0.754687 0L7 6L0.754687 12L0 11.2763L5.48698 6L0 0.7275Z' fill='%23282828'/%3e%3c/svg%3e ");
+    margin-left: 10px;
+    top: 2px;
+    position: relative;
+}
+
+span[data-name=category-popup3] {
+    display: none;
+}
+
+@media(max-width:1600px) {
+    .container-about {
+        padding: 150px 50px;
+    }
+
+    .list-dealers {
+        gap: 40px 80px;
+    }
+
+    .container-info-company {
+        padding: 150px 50px 100px;
+        gap: 40px 120px;
+    }
+
+    .container-importance {
+        padding: 100px 50px 150px;
+    }
+
+    .item-text {
+        min-height: 160px;
+        max-height: 160px;
+    }
+
+    .container-absolute__block-top {
+        left: 38%;
+        position: relative;
+        width: 750px;
+    }
+
+    .container-absolute__block-bottom {
+        left: 0;
+    }
+
+    .section-absolute {
+        min-height: 900px;
+        max-height: 100vh;
+    }
+
+    .section-absolute .banner {
+        min-height: 900px;
+        object-fit: cover;
+    }
+
+    .container-partner__list {
+        padding-right: 0;
+    }
+
+    .news__item-info-text {
+        padding-right: 80px;
+    }
+
+    .detail-news {
+        padding: 0 200px;
+    }
+
+    .list-dealers__item {
+        font-size: 16px;
+    }
+
+    .news__item picture img {
+
+        max-width: 370px;
+        min-width: 370px;
+    }
+}
+
+
+@media(max-width:1200px) {
+    .container-about {
+        padding: 130px 12px;
+    }
+
+    .container-importance {
+        padding: 100px 12px 130px;
+    }
+
+    .container-info-company {
+        padding: 130px 12px 100px 12px;
+        gap: 40px 40px;
+    }
+
+    .office-block__center-flex.mr {
+        margin-right: 168px;
+    }
+
+    .office-block__center-flex {
+        min-width: 179px;
+    }
+
+    .selected-dealer {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 15px 12px 15px;
+    }
+
+    .selected-dealer::after {
+        top: 12px;
+    }
+
+    .checkbox-cars label {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .input-checkbox+label::before {
+        position: relative;
+        top: 8px;
+    }
+
+    .list-dealers {
+        grid-gap: 40px 70px;
+    }
+
+    .list-dealers__item {
+        font-size: 16px;
+    }
+
+    .item-text,
+    .item-city {
+        font-size: 16px;
+    }
+
+    .item-number {
+        font-weight: 350;
+        font-size: 60px;
+    }
+
+    .item-text {
+        min-height: 100px;
+        max-height: 100px;
+    }
+
+    .container-absolute {
+        width: 100%;
+    }
+
+    .container-absolute__text {
+        font-size: 34px;
+    }
+
+    .container-absolute__block-top {
+        left: 34%;
+        width: 675px;
+        top: 123px;
+    }
+
+    .container-absolute__block-bottom {
+        top: 180px;
+        width: 786px;
+    }
+
+    .importance-grid__item-number {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .importance-grid__item-name {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .importance-grid__item-text {
+        font-size: 16px;
+    }
+
+    .vacancy__list-item-city,
+    .vacancy_title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .vacancy__list-item-city {
+        padding-bottom: 10px;
+    }
+
+    .vacancy__list-item-name {
+        font-size: 16px;
+    }
+
+    .container-partner {
+        padding-top: 130px;
+    }
+
+    .container-partner__item {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .container-partner__list {
+        gap: 40px 40px;
+    }
+
+    .container-news {
+        padding-top: 130px;
+    }
+
+    .news__item-info-date {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .news__item-info-title {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .news__item-info-text {
+        padding-right: 0px;
+        font-size: 16px;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+
+    .social__news .social__item {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .detail-news {
+        padding: 0 150px;
+    }
+
+    .detail-news__title {
+        max-width: 571px;
+        font-size: 34px;
+    }
+
+    .detail-news__date {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .detail-news__info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .detail-news-controls a {
+        font-size: 16px;
+    }
+
+    .social-detail-news {
+        margin: 80px 0 40px;
+    }
+
+    .news__item picture img {
+        max-width: 307px;
+        min-width: 307px;
+    }
+}
+
+@media(max-width:1024px) {
+    .container-about {
+        padding: 100px 15px;
+    }
+
+    .container-importance {
+        padding: 80px 15px 100px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 30px;
+    }
+
+    .container-info-company {
+        padding: 100px 15px 80px 15px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 77px;
+    }
+
+    .block-img__absolute .banner,
+    .container-header,
+    .block-img__absolute {
+        max-height: 650px;
+        min-height: 650px;
+    }
+
+    .text-banner {
+        bottom: 280px;
+    }
+
+    .filter {
+        flex-direction: column;
+        align-items: self-start;
+    }
+
+    .select-container {
+        margin-bottom: 30px;
+    }
+
+    .list-dealers {
+        grid-gap: 40px 0px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .input-checkbox+label::before {
+        top: 7px;
+    }
+
+    .checkbox-cars label {
+        bottom: 7px;
+    }
+
+    .container-dealer {
+        gap: 20px;
+    }
+
+    .container-absolute {
+        width: 100%;
+        left: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .container-absolute__block-top {
+        left: 0;
+        width: 100%;
+        top: 216px;
+    }
+
+    .container-absolute__block-bottom {
+        top: 276px;
+        width: 100%;
+    }
+
+    .section-absolute {
+        min-height: 700px;
+        max-height: 100vh;
+    }
+
+    .importance-grid__item {
+        min-height: 320px;
+    }
+
+    .section-vacancy>.vacancy__list {
+        grid-column: 1;
+    }
+
+    .section-vacancy {
+        grid-template-columns: auto;
+    }
+
+    .container-vacancy__info {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 30px;
+    }
+
+    .container-vacancy__info .title {
+        margin-bottom: 30px;
+    }
+
+    .vacancy__list {
+        gap: 40px 30px;
+    }
+
+    .container-partner {
+        padding-top: 100px;
+    }
+
+    .container-partner__list {
+        gap: 40px 30px;
+        margin-top: 60px;
+    }
+
+    .container-partner__item {
+        padding-right: 20px;
+
+    }
+
+    .text-banner__partner {
+        bottom: 190px;
+    }
+
+    .container-news {
+        padding-top: 100px;
+    }
+
+    .news__item {
+        flex-direction: column;
+    }
+
+    .news__item picture {
+        width: 100%;
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .news__item picture img {
+        max-height: 100%;
+        max-width: 100%;
+        margin-bottom: 0px;
+        min-width: 100%;
+    }
+
+    .news__item-info-text {
+        padding-bottom: 30px;
+    }
+
+    .news__item {
+        gap: 20px 40px;
+    }
+
+    .detail-news {
+        padding: 0;
+    }
+
+    .social-detail-news {
+        margin: 60px 0 40px;
+    }
+
+}
+
+@media(max-width:768px) {
+    .office-block__center-flex.mr {
+        margin-right: 0px;
+    }
+
+    .office-block__center-flex {
+        width: 50%;
+    }
+
+    .list-dealers {
+        grid-gap: 40px 40px;
+    }
+
+    .item-text {
+        min-height: 140px;
+        max-height: 140px;
+    }
+
+    .container-absolute__text {
+        font-size: 28px;
+    }
+
+    .importance-grid__item-number {
+        font-size: 58px;
+    }
+
+    .importance-grid__item-name {
+        font-size: 20px;
+    }
+
+    .importance-grid__item-text {
+        font-size: 15px;
+    }
+
+    .vacancy__list-item-city,
+    .vacancy_title {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .vacancy__list-item-name {
+        font-size: 15px;
+    }
+
+    .news__item-info-title,
+    .container-partner__item {
+        font-size: 20px;
+        line-height: 30px;
+        white-space: normal;
+    }
+
+    .container-partner__item {
+        padding-right: 40px;
+    }
+
+}
+
+@media(max-width:576px) {
+    .social__office {
+        margin-top: 0;
+    }
+
+    .btn-two {
+        width: 100%;
+    }
+
+    .social__office .social__item {
+        margin-left: 0;
+        margin-right: 12px;
+        margin-top: 12px;
+    }
+
+    .office-block__center-flex {
+        min-width: auto;
+    }
+
+    .container-about {
+        padding: 80px 10px;
+    }
+
+    .container-importance {
+        padding: 60px 10px 80px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .container-info-company {
+        padding: 80px 10px 60px 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .office-block__center-flex.mr {
+        margin-right: 0px;
+    }
+
+    .adress {
+        max-width: 120px;
+    }
+
+    .block-img__absolute .banner,
+    .container-header,
+    .block-img__absolute {
+        min-height: 300px;
+        max-height: 300px;
+
+
+    }
+
+    .container-header.visible {
+        overflow: visible;
+    }
+
+    .text-banner {
+        bottom: 108px;
+    }
+
+    .text-banner-work {
+        bottom: 86px;
+    }
+
+    .list-dealers__item {
+        font-size: 12px;
+    }
+
+    .container-asp-dealer,
+    .container-new-dealer {
+        margin-top: 50px;
+    }
+
+    .select-box {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+        margin-right: 0;
+    }
+
+    .select-container {
+        margin-bottom: 25px;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .select-box .options-container-dealer,
+    .select-box .options-container-dealer.active {
+        width: 100%;
+    }
+
+    .selected-dealer {
+        width: 100%;
+    }
+
+    .checkbox-cars {
+        margin-right: 0;
+    }
+
+    .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .dealer__title {
+        font-size: 20px;
+    }
+
+    .text-banner__title {
+        line-height: 110%;
+    }
+
+    .item-text {
+        min-height: auto;
+        max-height: 100%;
+    }
+
+    .item-text,
+    .item-city {
+        font-size: 14px;
+    }
+
+    .item-text {
+        padding-bottom: 30px;
+    }
+
+    .item-number {
+        font-size: 56px;
+    }
+
+    .container-absolute__block-top {
+        top: 90px;
+    }
+
+    .container-absolute__block-bottom {
+        top: 130px;
+    }
+
+    .container-absolute__text {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .section-absolute {
+        max-height: 568px;
+        min-height: 568px;
+    }
+
+    .container-absolute {
+        padding: 0 10px;
+    }
+
+    .container-importance .title {
+        margin-bottom: 25px;
+    }
+
+    .importance-grid__item {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .importance-grid__item-number {
+        font-size: 56px;
+        line-height: 110%;
+        margin-bottom: 10px;
+    }
+
+    .importance-grid__item-name {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .importance-grid__item-text {
+        font-size: 14px;
+    }
+
+    .section-absolute .banner {
+        min-height: auto;
+    }
+
+    .container-vacancy__info {
+        grid-template-columns: auto;
+        gap: 10px 30px;
+    }
+
+    .vacancy_title {
+        margin-bottom: 40px;
+    }
+
+    .vacancy__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .vacancy__list-item-city {
+        padding-bottom: 15px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .vacancy__list-item-name {
+        font-size: 14px;
+    }
+
+    .container-partner {
+        padding-top: 80px;
+    }
+
+    .container-partner__item {
+        padding-right: 40px;
+    }
+
+    .container-partner__item::after {
+        content: url("data:image/svg+xml;charset=UTF-8, %3csvg width='25' height='26' viewBox='0 0 25 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='24.1516' width='0.847459' height='22.0398' fill='%23282828'/%3e%3crect x='2.96606' width='22.0339' height='0.847459' fill='%23282828'/%3e%3crect width='33.9029' height='0.847572' transform='matrix(0.707012 -0.707202 0.707181 0.707033 0 24.4023)' fill='%23282828'/%3e%3c/svg%3e");
+        position: absolute;
+        right: 0;
+        top: 3px;
+    }
+
+    .container-partner__list {
+        gap: 30px 30px;
+        margin-top: 40px;
+        grid-template-columns: auto;
+    }
+
+    .container-partner__item {
+        font-size: 18px;
+        line-height: 27px;
+        padding-bottom: 30px;
+    }
+
+
+    .container-partner__item:nth-last-child(-n+2) {
+        padding-bottom: 30px;
+    }
+
+    .container-partner__item:last-child {
+        padding-bottom: 0;
+        border: none;
+    }
+
+    .text-banner__partner {
+        bottom: 15px;
+    }
+
+    .container-news {
+        padding-top: 80px;
+    }
+
+    .news__item-info-title {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+
+    .news__item-info-text {
+        padding-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .news__item-info-date {
+        font-size: 14px;
+    }
+
+    .social__news .social__item {
+        margin-right: 20px;
+    }
+
+    .detail-news__info p>img {
+        margin: 20px 0;
+    }
+
+    .detail-news__info h5,
+    .detail-news__info h4,
+    .detail-news__info h3,
+    .detail-news__info h2,
+    .detail-news__info h1,
+    .detail-news__info {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .detail-news__info h4,
+    .detail-news__info h3,
+    .detail-news__info h2,
+    .detail-news__info h1,
+    .detail-news__info h5 {
+        margin-top: 60px;
+    }
+
+    .detail-news-controls a {
+        margin: 0;
+    }
+
+    .detail-news__title {
+        max-width: 100%;
+        font-size: 30px;
+    }
+
+    .detail-news__date {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+
+    .text-banner__title--news {
+        width: 290px;
+    }
+
+    .container-partner__item br {
+        display: block;
+    }
+        .prev-news{
+            display: none;
+        }
+                .article-list__item-info{
+                    width: 100%;
+                    min-width: auto;
+                }
+}
+
+@media(max-width:420px) {
+    .social__office .social__item {
+        margin-right: 8px;
+    }
+
+}

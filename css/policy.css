@@ -1,0 +1,151 @@
+.container-header {
+    height: auto;
+    min-height: auto;
+}
+
+.container-policy {
+    padding: 100px 400px 0 400px;
+    box-sizing: border-box;
+}
+.container-policy .text{
+    margin: 15px 0;
+}
+
+.container-policy .title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    /* or 48px */
+
+
+    /* Черный */
+
+    color: #282828;
+    max-width: 491px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.container-policy .text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+
+
+    /* Черный */
+
+    color: #282828;
+}
+
+.container-policy .strong {
+    font-weight: bold;
+}
+
+.container-policy .title-policy {
+    max-width: 100%;
+}
+
+.container-header {
+    overflow: hidden;
+}
+
+header.active {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.block-submenu {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.title-error {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    /* identical to box height, or 46px */
+
+
+    /* Черный */
+
+    color: #282828;
+    margin-bottom: 30px;
+}
+
+.container-policy .btn-two {
+    margin: 50px 0 0 0;
+}
+
+.container-policy .text-error {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    /* Черный */
+
+    color: #282828;
+}
+
+@media(max-width:1600px) {
+    .container-policy {
+        padding: 100px 162px 0 162px;
+    }
+
+}
+
+
+@media(max-width:1200px) {
+    .container-policy .title {
+        font-size: 46px;
+    }
+
+    .title-error {
+        font-size: 46px;
+    }
+
+    .container-policy .text-error {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1024px) {
+    .container-policy {
+        padding: 80px 15px 0 15px;
+    }
+
+    .container-policy .text {
+        font-size: 16px;
+    }
+
+    .container-policy .text-error {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:576px) {
+    .container-policy {
+        padding: 50px 10px 0 10px;
+    }
+
+    .container-policy .title {
+        font-size: 40px;
+        max-width: 100%;
+    }
+
+    .container-policy .text {
+        font-size: 14px;
+    }
+
+    .container-policy .title-error {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+        .container-policy .btn-two {
+            margin: 30px 0 0 0;
+            width: 100%;
+        }
+
+}
